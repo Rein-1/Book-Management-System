@@ -14,7 +14,7 @@ const AppRouter = () => {
                 <Header />
                 <div className="main-content">
                     <Routes>
-                        <Route path="/" element={<BookList />} />
+                        <Route path="/" element={<BookList books={books} setBooks={setBooks} />} />
                         <Route path="/add" element={<AddBook books={books} setBooks={setBooks} />} />
                     </Routes>
                 </div>
