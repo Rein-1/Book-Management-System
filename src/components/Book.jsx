@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, CloseButton } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Book =({
@@ -26,8 +26,8 @@ const Book =({
                     <div>Price: {price}</div>
                     <div>Date: {new Date(date).toDateString()}</div>
                 </div>
-                <Button variant='primary' onClick={handleEditClick}>Edit</Button>
-                <Button variant='danger' onClick={() => handleRemoveBook(id)}>Delete</Button>
+                <Button variant='outline-primary' onClick={handleEditClick}>Edit</Button>
+                <CloseButton onClick={() => handleRemoveBook(id)} />
             </Card.Body>
         </Card>
     );
