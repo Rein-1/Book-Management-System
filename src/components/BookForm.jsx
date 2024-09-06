@@ -19,7 +19,7 @@ const BookForm = (props) => {
         const values = [bookname, author, quantity, price];
         let errorMsg = '';
         const allFieldsFilled = values.every((field) => {
-            const value = `${field}` .trim();
+            const value = `${field}`.trim();
             return value !== '' && value !== '0';
         });
 
